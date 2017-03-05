@@ -27,7 +27,7 @@ async.waterfall([
       Movie.remove({},callback);
     },
 
-    function(callback){
+    function(data,callback){
       read(url,callback);//这个里面返回的就是movies
     },
     function(movies,callback){
