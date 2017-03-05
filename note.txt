@@ -1,0 +1,26 @@
+
+先安装npm install request cheerio mongoose express ejs iconv-lite cron async debug --save
+这样就可以用了
+
+
+
+ mongod --dbpath=E:\hzMongodb\data
+
+
+思路：
+    1写一个read模块，用来传入url地值，返回读取后的对象数组
+    2把上面的对象数组保存在数据库中的mongodb
+    3简历一个web服务器显示保存的数据库
+    4开启一个计划任务每小时更新一次数据库
+    5把此项目发布github并且不熟阿里云上
+
+
+// 这个项目执行的语法
+
+若是在命令行启动的话 那么进入cd tasks这个文件夹  然后执行node main.js
+                  再然后想要看到你的debug的那些东西，那么就再执行一句 set DEBUG=crawl:*
+                  然后再执行node main.js 就能看到了
+
+
+
+
